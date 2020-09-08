@@ -5,7 +5,7 @@ fastAPI Service to help in limiting BYOD devices count per User on Forescout Pla
 ## 1. Preparing the Docker image
 
 Either by building it locally on your Docker host: 
-`git pull https://github.com/hkarhani/byodlimit.git`
+`git clone https://github.com/hkarhani/byodlimit.git`
 
 and then build it within the downloaded folder 'byodlimit': 
 `docker build -t byodlimit .`
