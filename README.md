@@ -30,7 +30,7 @@ In order for pyFS library to properly POST DEX attributes to Forescout platform,
 
 ## 4. Run the fastAPI web-service on the container
 
-Use the following command to run the fastAPI service. You can either execute it against the container in CLI from your docker host by using `docker exec ..` or easier to use the Jupyter Notebook at: http://<docker-host-ip>:8888 => New Terminal.
+Use the following command to run the fastAPI service. You can either execute it against the container in CLI from your docker host by using `docker exec ..` or easier to use the Jupyter Notebook at: `http://<docker-host-ip>:8888` => New Terminal.
 
 `uvicorn main:app --host 0.0.0.0 --port 5000 --reload`
 
