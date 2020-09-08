@@ -35,3 +35,9 @@ Use the following command to run the fastAPI service. You can either execute it 
 `uvicorn main:app --host 0.0.0.0 --port 5000 --reload`
 
 You will be able to monitor the fastAPI service from the command output. 
+
+## P.S. Security Note: 
+
+Please use this script in controlled Lab Environment - Security features are disabled in the provided script. 
+
+Security features are disabled for Jupyter Notebook (anyone with IP reachability to docker host will be able to browse the Notebook) and fastAPI is implementing http only without authentication. Will be updating api-key verification or credentials-based authentication in future release. 
