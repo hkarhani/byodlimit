@@ -24,10 +24,9 @@ otherwise, you can run your custom built image:
 
 `docker run -itd -p 8888:8888 -p 5000:5000 byodlimit`
 
-If you want to run the container without Jupyter Notebook Interface permantenly (with restart always) on your docker host: 
+If you want to run the container without Jupyter Notebook Interface permantenly (with restart always) on your docker host after making the changes to your settings: 
 
 `docker run -itd -p 5000:5000 --restart always byodlimit uvicorn main:app --host 0.0.0.0 --port 5000 --reload`
-
 
 ## 3. Edit the fsconfig.yml file
 
@@ -46,6 +45,10 @@ Use the following command to run the fastAPI service. You can either execute it 
 `uvicorn main:app --host 0.0.0.0 --port 5000 --reload`
 
 You will be able to monitor the fastAPI service from the command output.
+
+If you want to run the container without Jupyter Notebook Interface permantenly (with restart always) on your docker host after making the changes to your settings: 
+
+`docker run -itd -p 5000:5000 --restart always byodlimit uvicorn main:app --host 0.0.0.0 --port 5000 --reload`
 
 ## P.S. Security Note:
 
