@@ -24,6 +24,11 @@ otherwise, you can run your custom built image:
 
 `docker run -itd -p 8888:8888 -p 5000:5000 byodlimit`
 
+If you want to run the container without Jupyter Notebook Interface permantenly (with restart always) on your docker host: 
+
+`docker run -itd -p 5000:5000 --restart always byodlimit uvicorn main:app --host 0.0.0.0 --port 5000 --reload`
+
+
 ## 3. Edit the fsconfig.yml file
 
 In order for pyFS library to properly POST DEX attributes to Forescout platform, please ensure you edit the fsconfig.yml with the IP and credentials of your Forescout Platform running OIM. Provide both web-api (not used in this code) / DEX (used to update the guest_tag DEX attribute). Please note that username for DEX needs to be in format: name@username as per CounterACT Web Service Accounts configuration.
@@ -46,7 +51,7 @@ You will be able to monitor the fastAPI service from the command output.
 
 Please use this script in controlled Environment.
 
-Security features are disabled for Jupyter Notebook (anyone with IP reachability to docker host port 8888 will be able to browse the Notebook). You can either modify the Jupyter Notebook settings file or stop sharing the port 8888. 
+Security features are disabled for Jupyter Notebook (anyone with IP reachability to docker host port 8888 will be able to browse the Notebook / scripts - to simplify config editing). You can either modify the Jupyter Notebook settings file or stop sharing the port 8888. 
 
 
 fastAPI (default port 5000) is implementing http only and I just updated the code the accept API Key either via: 
