@@ -18,6 +18,7 @@ or simply pull the auto-built image:
 This image will have both Jupyter Notebook (exposed port 8888) and fastAPI (exposed port 5000) running.
 
 If you pulled the auto-built image you can run the container by executing the following command:
+
 `docker run -itd -p 8888:8888 -p 5000:5000 hkarhani/byodlimit`
 
 otherwise, you can run your custom built image:
