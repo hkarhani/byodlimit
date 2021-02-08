@@ -23,7 +23,7 @@ maxDevicesPerUser = 2
 Users = {}
 
 # API Key Settings
-API_KEY = "1234567asdfgh" # Please Change the API Key 
+API_KEY = "1234567asdfgh" # Please Change the API Key before running
 API_KEY_NAME = "access_token"
 COOKIE_DOMAIN = "byodlimit.fs"
 
@@ -51,7 +51,7 @@ async def get_api_key(
 # app: Main FastAPI Object to be used
 app = FastAPI(docs_url=None, redoc_url=None, openapi_url=None)
 
-# fsApp: pyFS Object to POST DEX Property to Forescout Platform 
+# fsApp: pyFS Object to POST DEX Property to the Platform 
 # by default Object will load fsconfig.yml file as input. 
 fsApp = pyFS()
 
