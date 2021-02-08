@@ -1,6 +1,6 @@
 # Enforcing BYOD devices Limit per User
 
-fastAPI Service to help in limiting BYOD devices count per User on Forescout Platform.
+fastAPI Service to help in limiting BYOD devices count per User. 
 
 ## 1. Preparing the Docker image
 
