@@ -31,7 +31,7 @@ If you want to run the container without Jupyter Notebook Interface permantenly 
 
 ## 3. Edit the fsconfig.yml file
 
-In order for pyFS library to properly POST DEX attributes to Forescout platform, please ensure you edit the fsconfig.yml with the IP and credentials of your Forescout Platform running OIM. Provide both web-api (not used in this code) / DEX (used to update the guest_tag DEX attribute). Please note that username for DEX needs to be in format: name@username as per CounterACT Web Service Accounts configuration.
+In order for pyFS library to properly POST DEX attributes to the platform, please ensure you edit the fsconfig.yml with the IP and credentials of your Platform running OIM. Provide both web-api (not used in this code) / DEX (used to update the guest_tag DEX attribute). Please note that username for DEX needs to be in format: name@username as per Web Service Accounts configuration.
 
 Please edit main.py to change:
 - maxDevicesPerUser = 2 # default it is 2 concurrent BYOD devices.
